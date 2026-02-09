@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Free Fire Tools</title>
+  <script src="https://telegram.org/js/telegram-web-app.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>🔥 Free Fire Tool Portal</h2>
+
+<select id="tool">
+  <option value="jwt">JWT Generate</option>
+  <option value="info">Player Info</option>
+  <option value="stats">Stats</option>
+  <option value="like">Send Like</option>
+  <option value="visit">Send Visit</option>
+</select>
+
+<input id="uid" placeholder="UID">
+<input id="region" placeholder="Region (bd/ind/sg)">
+<input id="password" placeholder="Password (JWT only)">
+<input id="match" placeholder="Match Mode (Stats)">
+<input id="game" placeholder="Game Mode (Stats)">
+<select id="visitType">
+  <option value="1k">1K Visit</option>
+  <option value="100k">100K Visit</option>
+</select>
+
+<button onclick="run()">RUN</button>
+
+<pre id="result"></pre>
+
+<script src="script.js"></script>
+</body>
+</html>
